@@ -26,19 +26,7 @@ router.get('/', (req, res, next) => {
 //  GET the Book Details page in order to add a new Book
 router.get('/', (req, res, next) => {
 
-  book.find( (err, books) => {
-    if (err) {
-      return console.error(err);
-    }
-    else {
-      res.render('books-index', {
-        title: 'add Books',
-        books: books
-      });
-    }
-  });
-
-
+  
 });
 
 // POST process the Book Details page and create a new Book - CREATE
